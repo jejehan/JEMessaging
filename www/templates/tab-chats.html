@@ -1,0 +1,18 @@
+<ion-view title="Chats">
+    <ion-nav-buttons side="left">
+      <button class="button button-icon " ng-click="doSomething()">
+        <b>Edit</b>
+      </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right" >
+      <button  class="button button-icon ion-compose" ng-click="doSomething()" >
+      </button>
+    </ion-nav-buttons>
+    <ion-content class="has-header">
+        <ion-list>
+        <ion-item ng-repeat="friend in friends" type="item-text-wrap" href="#/tab/friend/{{friend.id}}">
+            {{friend.name}}
+        </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
